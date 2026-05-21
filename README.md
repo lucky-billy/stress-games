@@ -45,9 +45,16 @@ Vercel（`*.vercel.app`）在国内通常需要梯子。已为仓库配置 **Git
 
 **访问地址：** https://lucky-billy.github.io/stress-games/
 
-首次启用请在 GitHub 仓库：
+首次启用（按顺序操作）：
 
-**Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**
+1. **Settings → Actions → General → Workflow permissions** 选 **Read and write permissions**，保存  
+2. 推送代码后，打开 **Actions**，等 **Deploy GitHub Pages** 跑绿（会生成 `gh-pages` 分支）  
+3. **Settings → Pages → Build and deployment → Source** 选 **Deploy from a branch**  
+   - Branch：**gh-pages**  
+   - Folder：**/ (root)**  
+4. 保存后访问：**https://lucky-billy.github.io/stress-games/**
+
+若 deploy 曾报 `Ensure GitHub Pages has been enabled`，按上面第 3 步改成分支部署即可，然后在 Actions 里 **Re-run all jobs**。
 
 之后每次 `push` 到 `main` 会自动更新。国内访问 GitHub Pages 也不保证 100% 稳定，但一般比 Vercel 更容易打开。
 
