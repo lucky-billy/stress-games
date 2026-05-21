@@ -39,12 +39,31 @@
 | 钟摆 | 物理摆动 |
 | 爆戳键盘 | 狂按解压 |
 
+## 国内访问（推荐 GitHub Pages）
+
+Vercel（`*.vercel.app`）在国内通常需要梯子。已为仓库配置 **GitHub Pages** 自动部署：
+
+**访问地址：** https://lucky-billy.github.io/stress-games/
+
+首次启用请在 GitHub 仓库：
+
+**Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**
+
+之后每次 `push` 到 `main` 会自动更新。国内访问 GitHub Pages 也不保证 100% 稳定，但一般比 Vercel 更容易打开。
+
+## 部署到 Vercel（海外 / 需梯子）
+
+仓库：[github.com/lucky-billy/stress-games](https://github.com/lucky-billy/stress-games)
+
+- 地址：https://stress-games.vercel.app
+- **Build Command**：`npm run build`（不要用 `build:pages`）
+- **Output Directory**：`dist`
+
+`vercel.json` 已配置 SPA 路由。
+
 ## 本地开发
 
-项目路径：`website/stress-games`
-
 ```bash
-cd stress-games
 npm install
 npm run dev
 ```
@@ -60,7 +79,8 @@ npm run preview
 
 构建产物在 `dist/` 目录，可部署到任意静态托管（Vercel、Netlify、GitHub Pages 等）。
 
-`vite.config.ts` 已设置 `base: './'`，便于放在子路径或本地直接打开 `index.html`。
+- Vercel：`base: './'`（`npm run build`）
+- GitHub Pages：`base: '/stress-games/'`（`GITHUB_PAGES=true npm run build:pages`）
 
 ## 技术栈
 
@@ -72,4 +92,3 @@ npm run preview
 
 1. 在 `src/games/<slug>/Game.tsx` 新建游戏组件（默认导出）
 2. 在 `src/games/registry.ts` 的 `gameList` 中注册一项
-# stress-games
