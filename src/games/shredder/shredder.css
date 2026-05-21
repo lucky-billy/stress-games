@@ -1,0 +1,63 @@
+.shredder__machine {
+  width: 100%;
+  max-width: 280px;
+  background: var(--surface2);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  position: relative;
+  min-height: 160px;
+}
+
+.shredder__slot {
+  padding: 0.75rem;
+  text-align: center;
+  background: #1e293b;
+  border-bottom: 2px dashed var(--accent);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.shredder__blades {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.shredder__fall {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.shredder__strip {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 24px;
+  background: #f8fafc;
+  animation: shredder-fall 1s ease-in forwards;
+}
+
+@keyframes shredder-fall {
+  to {
+    transform: translateY(80px) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.shredder__papers {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shredder__paper {
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: grab;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  touch-action: none;
+}

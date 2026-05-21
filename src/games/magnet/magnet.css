@@ -1,0 +1,26 @@
+.magnet__area {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 280px;
+  background: #1c1917;
+  border-radius: var(--radius-sm);
+  touch-action: none;
+}
+
+.magnet__fil {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background: #78716c;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.magnet__mag {
+  position: absolute;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}

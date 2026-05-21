@@ -1,0 +1,59 @@
+.organize__slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.organize__slot {
+  min-height: 88px;
+  padding: 0.5rem;
+  background: var(--surface2);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.organize__label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.organize__placeholder {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.organize__pool {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0.75rem;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  width: 100%;
+  max-width: 320px;
+}
+
+.organize__item {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.organize__item--draggable {
+  cursor: grab;
+  padding: 0.5rem;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  touch-action: none;
+}
+
+.organize__item--draggable:active {
+  cursor: grabbing;
+}

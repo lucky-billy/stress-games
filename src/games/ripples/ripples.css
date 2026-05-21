@@ -1,0 +1,12 @@
+.ripples {
+  align-items: stretch;
+}
+
+.ripples__canvas {
+  width: 100%;
+  height: 300px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  touch-action: manipulation;
+  cursor: pointer;
+}

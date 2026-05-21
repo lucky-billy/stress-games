@@ -1,0 +1,12 @@
+.zen-sand {
+  align-items: stretch;
+}
+
+.zen-sand__canvas {
+  width: 100%;
+  height: 280px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  touch-action: none;
+  cursor: crosshair;
+}

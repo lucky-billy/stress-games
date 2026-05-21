@@ -1,0 +1,37 @@
+.color-sort__tubes {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+.color-sort__tube {
+  width: 52px;
+  min-height: 140px;
+  padding: 4px;
+  background: var(--surface2);
+  border: 2px solid var(--border);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.color-sort__tube--selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.color-sort__stack {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2px;
+  flex: 1;
+}
+
+.color-sort__layer {
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}

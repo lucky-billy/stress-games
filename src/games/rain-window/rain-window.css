@@ -1,0 +1,12 @@
+.rain-window {
+  align-items: stretch;
+}
+
+.rain-window__canvas {
+  width: 100%;
+  height: 300px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  touch-action: manipulation;
+}

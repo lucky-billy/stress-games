@@ -1,0 +1,24 @@
+.piano__keys {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  max-width: 360px;
+  justify-content: center;
+}
+
+.piano__key {
+  flex: 1;
+  min-height: 120px;
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+  border: 1px solid #94a3b8;
+  border-radius: 0 0 6px 6px;
+  color: #334155;
+  font-weight: 600;
+  touch-action: manipulation;
+}
+
+.piano__key:active {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(2px);
+}

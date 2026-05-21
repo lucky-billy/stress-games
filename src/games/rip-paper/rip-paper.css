@@ -1,0 +1,29 @@
+.rip-paper__sheet {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background: #f8fafc;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rip-paper__strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 22px;
+  background: linear-gradient(#fff, #e2e8f0);
+  border-bottom: 1px dashed #94a3b8;
+  font-size: 0.7rem;
+  color: #64748b;
+  animation: rip-tear 0.3s ease-out forwards;
+  touch-action: manipulation;
+}
+
+@keyframes rip-tear {
+  to {
+    transform: translateY(40px) rotate(2deg);
+    opacity: 0;
+  }
+}

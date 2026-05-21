@@ -1,0 +1,24 @@
+.stamp {
+  align-items: stretch;
+}
+
+.stamp__pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.stamp__pick .btn {
+  min-height: 40px;
+  padding: 0.35rem 0.6rem;
+}
+
+.stamp__paper {
+  width: 100%;
+  height: 240px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  touch-action: manipulation;
+}

@@ -1,0 +1,32 @@
+.keyboard-game__board {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.keyboard-game__row {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.keyboard-game__key {
+  flex: 1;
+  min-width: 28px;
+  min-height: var(--touch-min);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  touch-action: manipulation;
+  transition: transform 0.05s, background 0.05s;
+}
+
+.keyboard-game__key--down {
+  transform: translateY(3px);
+  background: var(--accent);
+  color: #fff;
+}

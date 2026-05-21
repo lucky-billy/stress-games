@@ -1,0 +1,13 @@
+.clean-screen {
+  align-items: stretch;
+}
+
+.clean-screen__canvas {
+  width: 100%;
+  height: 280px;
+  max-height: 50vh;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  touch-action: none;
+  cursor: crosshair;
+}

@@ -1,0 +1,21 @@
+.stack__tower {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  height: 260px;
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.stack__block {
+  position: absolute;
+  height: 20px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 4px;
+}
+
+.stack__block--moving {
+  opacity: 0.9;
+  box-shadow: 0 0 12px var(--accent);
+}

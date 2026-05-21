@@ -1,0 +1,26 @@
+.snow-globe__ball {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.3), #1e3a5f);
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.snow-globe__tree {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+}
+
+.snow-globe__flake {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}

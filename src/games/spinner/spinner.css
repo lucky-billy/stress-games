@@ -1,0 +1,59 @@
+.spinner-game__disc {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #3b82f6,
+    #10b981,
+    #f59e0b,
+    #ec4899,
+    #8b5cf6,
+    #3b82f6
+  );
+  position: relative;
+  cursor: grab;
+  touch-action: none;
+  box-shadow: var(--shadow);
+}
+
+.spinner-game__disc:active {
+  cursor: grabbing;
+}
+
+.spinner-game__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--border);
+  z-index: 2;
+}
+
+.spinner-game__arm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  transform-origin: 8px center;
+}
+
+.spinner-game__arm--1 {
+  transform: rotate(0deg);
+}
+
+.spinner-game__arm--2 {
+  transform: rotate(120deg);
+}
+
+.spinner-game__arm--3 {
+  transform: rotate(240deg);
+}

@@ -1,0 +1,20 @@
+.puzzle__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: 240px;
+}
+
+.puzzle__tile {
+  aspect-ratio: 1;
+  min-height: 64px;
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 1.25rem;
+  font-weight: 700;
+  touch-action: manipulation;
+}
+
+.puzzle__tile:disabled {
+  visibility: hidden;
+}

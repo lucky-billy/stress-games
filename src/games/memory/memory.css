@@ -1,0 +1,20 @@
+.memory__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.memory__card {
+  aspect-ratio: 1;
+  min-height: var(--touch-min);
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 1.5rem;
+  touch-action: manipulation;
+}
+
+.memory__card--open {
+  background: var(--surface2);
+}

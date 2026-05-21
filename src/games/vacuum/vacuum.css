@@ -1,0 +1,25 @@
+.vacuum__area {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 280px;
+  background: #422006;
+  border-radius: var(--radius-sm);
+  touch-action: none;
+}
+
+.vacuum__dust {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a8a29e;
+  transform: translate(-50%, -50%);
+}
+
+.vacuum__head {
+  position: absolute;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
