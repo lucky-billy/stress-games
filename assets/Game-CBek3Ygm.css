@@ -1,0 +1,1 @@
+.magnet__area{border-radius:var(--radius-sm);touch-action:none;background:#1c1917;width:100%;max-width:320px;height:280px;position:relative}.magnet__fil{pointer-events:none;background:#78716c;border-radius:2px;width:12px;height:3px;position:absolute}.magnet__mag{pointer-events:none;z-index:2;font-size:2.5rem;position:absolute;transform:translate(-50%,-50%)}

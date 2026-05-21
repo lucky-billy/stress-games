@@ -1,0 +1,1 @@
+.stack__tower{background:var(--bg);border-radius:var(--radius-sm);width:100%;max-width:280px;height:260px;position:relative;overflow:hidden}.stack__block{background:linear-gradient(90deg, var(--accent), var(--accent2));border-radius:4px;height:20px;position:absolute}.stack__block--moving{opacity:.9;box-shadow:0 0 12px var(--accent)}

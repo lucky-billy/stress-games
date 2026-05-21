@@ -1,0 +1,1 @@
+.puzzle__grid{grid-template-columns:repeat(3,1fr);gap:6px;width:240px;display:grid}.puzzle__tile{aspect-ratio:1;background:var(--accent);border-radius:var(--radius-sm);touch-action:manipulation;min-height:64px;font-size:1.25rem;font-weight:700}.puzzle__tile:disabled{visibility:hidden}

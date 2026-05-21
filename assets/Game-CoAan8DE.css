@@ -1,0 +1,1 @@
+.memory__grid{grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:300px;display:grid}.memory__card{aspect-ratio:1;min-height:var(--touch-min);background:var(--accent);border-radius:var(--radius-sm);touch-action:manipulation;font-size:1.5rem}.memory__card--open{background:var(--surface2)}

@@ -1,0 +1,1 @@
+.stamp{align-items:stretch}.stamp__pick{flex-wrap:wrap;justify-content:center;gap:.35rem;display:flex}.stamp__pick .btn{min-height:40px;padding:.35rem .6rem}.stamp__paper{border:2px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;touch-action:manipulation;width:100%;height:240px}

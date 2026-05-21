@@ -1,0 +1,1 @@
+.stress-ball__ball{touch-action:none;background:radial-gradient(circle at 35% 30%,#f87171,#dc2626 50%,#991b1b);border-radius:50%;width:160px;height:160px;min-height:auto;transition:transform .15s cubic-bezier(.34,1.56,.64,1);box-shadow:inset 0 -12px 24px #00000040,0 8px 24px #dc262659}.stress-ball__ball:active{transition:transform 80ms ease-out}

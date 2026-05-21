@@ -1,0 +1,1 @@
+.catch__area{border-radius:var(--radius-sm);touch-action:none;background:#0f172a;width:100%;max-width:320px;height:300px;position:relative;overflow:hidden}.catch__star{pointer-events:none;font-size:1.25rem;position:absolute;transform:translate(-50%,-50%)}.catch__basket{font-size:2rem;position:absolute;bottom:8px;transform:translate(-50%)}

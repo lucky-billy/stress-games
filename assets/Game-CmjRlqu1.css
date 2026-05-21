@@ -1,0 +1,1 @@
+.vacuum__area{border-radius:var(--radius-sm);touch-action:none;background:#422006;width:100%;max-width:320px;height:280px;position:relative}.vacuum__dust{background:#a8a29e;border-radius:50%;width:8px;height:8px;position:absolute;transform:translate(-50%,-50%)}.vacuum__head{pointer-events:none;font-size:2rem;position:absolute;transform:translate(-50%,-50%)}
